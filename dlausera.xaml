@@ -1,0 +1,17 @@
+﻿<Page x:Class="PC_klub.dlausera"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PC_klub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="dlausera">
+
+    <Grid Background="#FFC479F1">
+        <DataGrid x:Name="TBX" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,340"/>
+        <TextBlock HorizontalAlignment="Left" Margin="103,173,0,0" TextWrapping="Wrap" Text="ВЫ ЮЗЕР" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="ZALI" Content="ЗАЛЫ" HorizontalAlignment="Left" Margin="263,251,0,0" VerticalAlignment="Top" Width="170" Click="ZALI_Click"/>
+
+    </Grid>
+</Page>

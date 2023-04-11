@@ -1,0 +1,24 @@
+﻿<Page x:Class="PC_klub.dlasiski"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PC_klub"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="dlasiski">
+
+    <Grid Background="#FFDA9EF0">
+        <DataGrid x:Name="dt1" d:ItemsSource="{d:SampleData ItemCount=5}"  Margin="112,0,112,312" SelectionChanged="dt1_SelectionChanged"/>
+        <Button x:Name="dob" Content="dobavit" HorizontalAlignment="Left" Margin="51,418,0,0" VerticalAlignment="Top" Width="147" Click="dob_Click"/>
+        <Button x:Name="del" Content="delete" HorizontalAlignment="Left" Margin="198,418,0,0" VerticalAlignment="Top" Width="119" Click="del_Click"/>
+        <Button x:Name="izm" Content="izmenit" HorizontalAlignment="Left" Margin="317,418,0,0" Width="116" Click="izm_Click" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb" materialDesign:HintAssist.Hint="nazvanie"  HorizontalAlignment="Left" Margin="51,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="101"/>
+        <TextBox x:Name="tb1" materialDesign:HintAssist.Hint="klass"  HorizontalAlignment="Left" Margin="173,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="101"/>
+        <TextBox x:Name="tb2" materialDesign:HintAssist.Hint="opisanie"  HorizontalAlignment="Left" Margin="299,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="101"/>
+        <TextBlock HorizontalAlignment="Left" Margin="152,196,0,0" TextWrapping="Wrap" Text="ВЫ СИСАДМИН" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="ZALKOMP" Content="ZALKOMP" HorizontalAlignment="Left" Margin="574,212,0,0" VerticalAlignment="Top" Width="132" Click="ZALKOMP_Click"/>
+        <Button x:Name="zal" Content="zal" HorizontalAlignment="Left" Margin="574,269,0,0" VerticalAlignment="Top" Width="141" Click="zal_Click"/>
+    </Grid>
+</Page>
